@@ -14,7 +14,7 @@ module.exports = function puppeteerSetup(on) {
         await page.click('Logout',{delay: 1000})
         await page.click("//i[contains(text(), 'Logout')]",{delay: 1000})
         await page.waitForSelector('flash-message', { visible: true ,})
-        await page.close()
+        await page.close() 
       },
     },
   })
