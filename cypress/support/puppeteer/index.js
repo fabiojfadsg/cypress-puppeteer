@@ -1,4 +1,4 @@
-const { setup, retry } = require('@cypress/puppeteer')
+const { setup } = require('@cypress/puppeteer')
 
 module.exports = function puppeteerSetup(on) {
   setup({
