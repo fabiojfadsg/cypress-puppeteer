@@ -1,8 +1,15 @@
 describe('Login', () => {
   it('logs in successfully', () => {
-    cy.visit('https://practice.expandtesting.com/login')
-    cy.puppeteer('switchLoginF')
+    
+    
+    cy.loginCypress()
+    cy.wait(2000)
+    cy.puppeteer('loginPupperteer')
   })
+    
+
+
+
 })
 
 
